@@ -1,6 +1,14 @@
 <?php
   $userName = "Raili Pettai";
   $fullTimeNow = date("d.m.Y H:i:s");
+  $hourNow = date("H");
+  $partOfDay = "hägune aeg";
+  
+  if($hourNow< 8){
+	 $partOfDay = "hommik";
+	  
+  }
+  
 ?>
 <!DOCTYPE html>
 <html lang="et">
@@ -50,7 +58,7 @@
   <button>Vajuta mind</button>
 <?php
   echo "<p>See on minu esimene PHP!</p>";
-  echo "<p>Lehe avamise hetkel oli ".$fullTimeNow .".</p>";
+  echo "<p>Lehe avamise hetkel oli ".$fullTimeNow .", ". $partOfDay.".</p>";
 
 ?>
 
