@@ -8,12 +8,20 @@
 	 $partOfDay = "hommik";
 	  
   }
-  
-  if($hourNow <= 8.30){
-	 $partOfDay = "Hommikune tipptund";
+  if($hourNow >= 7:00 or $hourNow <= 8:30 ){
+	 $partOfDay = "hommikune tipptund";
 	  
   }
-  
+    }
+  if($hourNow >= 16:30 or $hourNow <= 18:00 ){
+	 $partOfDay = "õhtune tipptund";
+	  
+  }
+    }
+  if($hourNow == 23:59 ){
+	 $partOfDay = "minuti pärast muutub kuupäev";
+	  
+  }
 ?>
 <!DOCTYPE html>
 <html lang="et">
