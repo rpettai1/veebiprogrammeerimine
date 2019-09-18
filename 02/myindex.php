@@ -8,27 +8,27 @@
 	 $partOfDay = "hommik";
 	  
   }
-
-// suurem kui 7 ja vaiksem kui 8
-  if($hourNow >= 7 && $hourNow <= 8 ){
-	 $partOfDay = "hommikune tipptund";
+  
+  if($hourNow <= 8.30){
+	 $partOfDay = "Hommikune tipptund";
 	  
   }
-
-// suurem kui 16 ja vaiksem kui 18
-  if($hourNow >= 16 && $hourNow <= 18 ){
-	 $partOfDay = "õhtune tipptund";
-	  
-  }
-    
-  if($hourNow == 23 ){
-	 $partOfDay = "tunni aja pärast muutub kuupäev";
-	  
-  }
-
-
-
-     require("header.php") echo "<h1>" . $userName. " veebiprogrammeerimine 2019</h1>";
+  
+?>
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <title>
+ <?php
+   echo $userName;
+  ?>
+   programmeerib veebi</title>
+   
+</head>
+<body>
+   <?php
+     echo "<h1>" . $userName. " veebiprogrammeerimine 2019</h1>";
    ?>
   <p><B>See veebileht on loodud õppetöö käigus ja ei sisalda mingisugust tõsiseltvõetavat sisu!</B></p>
   <h2>Teise taseme pealkiri</h2><P>

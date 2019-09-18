@@ -5,12 +5,16 @@
   $partOfDay = "hägune aeg";
   
   if($hourNow < 8){
-	 $partOfDay = "hommik";
+	 $partOfDay = "kes ärkab, kes on ärganud";
 	  
   }
   
-  if($hourNow <= 8.30){
-	 $partOfDay = "Hommikune tipptund";
+  if($hourNow <= 12){
+	 $partOfDay = "hommikusöök on söödud";
+	  
+  }
+  if($hourNow < ){
+	 $partOfDay = "hommik";
 	  
   }
   
@@ -31,6 +35,7 @@
      echo "<h1>" . $userName. " veebiprogrammeerimine 2019</h1>";
    ?>
   <p><B>See veebileht on loodud õppetöö käigus ja ei sisalda mingisugust tõsiseltvõetavat sisu!</B></p>
+  <p>Semester on täies hoos: <meter min="0" max="110" value= "15">17%</meter></p>
   <h2>Teise taseme pealkiri</h2><P>
   Rida katkestatakse<BR> ei jäeta rida vahele<P>
   Rida katkestatakse <P> ja järgmine rida jääb vahele<P>
