@@ -23,13 +23,10 @@
     
   if($hourNow == 23 ){
 	 $partOfDay = "tunni aja pärast muutub kuupäev";
-	  
-  }
 
-
-
-     require("header.php") echo "<h1>" . $userName. " veebiprogrammeerimine 2019</h1>";
+   echo "<h1>" . $userName. " veebiprogrammeerimine 2019</h1>"
    ?>
+  require("header.php")
   <p><B>See veebileht on loodud õppetöö käigus ja ei sisalda mingisugust tõsiseltvõetavat sisu!</B></p>
   <h2>Teise taseme pealkiri</h2><P>
   Rida katkestatakse<BR> ei jäeta rida vahele<P>
