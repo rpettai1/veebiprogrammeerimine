@@ -1,8 +1,8 @@
 <?php
-  require("../../../../../config_vp2019.php");
+  require("../../../config_vp2019.php");
   require("functions_film.php");
   //echo $serverHost;
-  $userName = "Andrus Rinde";
+  $userName = "Raili Pettai";
   $database = "if19_inga_pe_4";
   
   $filmInfoHTML = readAllFilms();
