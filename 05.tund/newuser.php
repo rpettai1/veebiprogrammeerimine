@@ -41,7 +41,18 @@
   //kui on uue kasutaja loomise nuppu vajutatud
   if(isset($_POST["submitUserData"])){
 	//kui on sisestatud nimi
-	if(isset($_POST["firstName"]) and !empty($_POST["firstName"])){
+	if(isset($_POST["firstName"]) and !<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+	</head>
+	<body>
+		
+	</body>
+	</html>empty($_POST["firstName"])){
 		$name = test_input($_POST["firstName"]);
 	} else {
 		$nameError = "Palun sisestage oma eesnimi!";
@@ -54,28 +65,93 @@
 	
 	//
 	require("header.php");
-	
 	//kontrollime, kas sünniaeg sisestati ja kas on korrektne
-	  if(isset($_POST["birthDay"]) and !empty($_POST["birthDay"])){
+	  if(isset($_POST["birthDay"]) and !<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthDay"])){
 		  $birthDay = intval($_POST["birthDay"]);
 	  } else {
 		  $birthDayError = "Palun vali sünnikuupäev!";
 	  }
 	  
-	  if(isset($_POST["birthMonth"]) and !empty($_POST["birthMonth"])){
+	  if(isset($_POST["birthMonth"]) and !<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthMonth"])){
 		  $birthMonth = intval($_POST["birthMonth"]);
 	  } else {
 		  $birthMonthError = "Palun vali sünnikuu!";
 	  }
 	  
-	  if(isset($_POST["birthYear"]) and !empty($_POST["birthYear"])){
+	  if(isset($_POST["birthYear"]) and !<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthYear"])){
 		  $birthYear = intval($_POST["birthYear"]);
 	  } else {
 		  $birthYearError = "Palun vali sünniaasta!";
 	  }
 	  
 	  //kontrollime, kas kuupäev on valiidne ehk reaalselt olemas ja moodustan
-	  if(!empty($_POST["birthDay"]) and !empty($_POST["birthMonth"]) and !empty($_POST["birthYear"])){
+	  if(!<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthDay"]) and !<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthMonth"]) and !<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($_POST["birthYear"])){
 		  if(checkdate($birthMonth, $birthDay, $birthYear)){
 			  $tempDate = new DateTime($birthYear ."-" .$birthMonth ."-" .$birthDay);
 			  $birthDate = $tempDate->format("Y-m-d");
@@ -85,7 +161,84 @@
 	  }//kuupäeva valiidsus
 	
 		//Kui kõik on korras, salvestame kasutaja
-	if(empty($nameError) and empty($surnameError) and empty($birthMonthError) and empty($birthYearError) and empty($birthDayError)and empty($birthDateError) and empty($genderError) and empty($emailError) and empty($passwordError) and empty($confirmpasswordError)){
+		($birthMonthError) and <!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($birthYearError) and<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html> empty($birthDayError)and <!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($birthDateError) and<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html> empty($genderError) and <!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($emailError) and<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html> empty($passwordError) and <!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta http-equiv="X-UA-Compatible" content="ie=edge">
+			<title>Document</title>
+		</head>
+		<body>
+			
+		</body>
+		</html>empty($confirmpasswordError)){
 		$notice = singUp($name, $surname, $email, $gender, $birthDate, $_POST["password"]);
 		}else{
 		$notice = "Ei saa salvestada, andmed on puudulikud!";

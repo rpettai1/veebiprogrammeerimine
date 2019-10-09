@@ -1,9 +1,13 @@
 <?php
   $userName = "Raili Pettai";
   $photoDir = "../photos/";
-  $photoTypeAllowed = ["image/jpge", "image/png"];
   $fullTimeNow = date("d.m.Y H:i:s");
+  $monthNamesET = [1=>"jaanuar", "veebruar", "märts", "aprill", "mai", "juuni","juuli", "august", "september", "oktoober", "november", "detsember"];
+  $dayNamesET = ["esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev", "pühapäev"];$photoTypeAllowed = ["image/jpge", "image/png"];
+  $month = $monthNamesET[date("n")];
+  $daynames = $dayNamesET[date("w")];
   $hourNow = date("H");
+    
   $partOfDay = "hägune aeg";
   
    if($hourNow >= 5){
@@ -124,7 +128,8 @@
   <button>Vajuta mind</button>
 <?php
   echo "<p>See on minu esimene PHP!</p>";
-  echo "<p>Lehe avamise hetkel oli ".$fullTimeNow .", ". $partOfDay.".</p>";
+  echo "<p>Lehe avamise hetkel oli "
+ .$partOfDay .",".$fullTimeNow .";".$month . "," .$daynames .".</p>";
   
 ?>
   <hr>
